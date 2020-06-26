@@ -1,29 +1,18 @@
-/* Copyright 2013 Twitter, Inc. Licensed under The MIT License. http://opensource.org/licenses/MIT */
+import advice from "./lib/advice";
+import component from "./lib/component";
+import compose from "./lib/compose";
+import debug from "./lib/debug";
+import logger from "./lib/logger";
+import registry from "./lib/registry";
+import utils from "./lib/utils";
+export default {
+  advice: advice,
+  component: component,
+  compose: compose,
+  debug: debug,
+  logger: logger,
+  registry: registry,
+  utils: utils,
+};
 
-define(
-
-  [
-    './lib/advice',
-    './lib/component',
-    './lib/compose',
-    './lib/debug',
-    './lib/logger',
-    './lib/registry',
-    './lib/utils'
-  ],
-
-  function(advice, component, compose, debug, logger, registry, utils) {
-    'use strict';
-
-    return {
-      advice: advice,
-      component: component,
-      compose: compose,
-      debug: debug,
-      logger: logger,
-      registry: registry,
-      utils: utils
-    };
-
-  }
-);
+console.log("Vipul's version");

@@ -8,16 +8,13 @@
     "lib"
   ],
   "devDependencies": {
-    "jscs" : "^1.5.8",
-    "karma": "~0.12.6",
-    "karma-cli": "0.0.4",
-    "karma-jasmine": "~0.1.0",
-    "karma-requirejs": "~0.2.0",
-    "karma-chrome-launcher": "~0.1.0",
-    "karma-ie-launcher": "~0.1.1",
-    "karma-firefox-launcher": "~0.1.0",
-    "karma-safari-launcher": "~0.1.1",
-    "webpack": "^1.11"
+    "jscs": "^3.0.7",
+    "karma": "^5.1.0",
+    "karma-cli": "^2.0.0",
+    "karma-jasmine": "^3.3.1",
+    "karma-requirejs": "^1.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "build": "npm run webpack & npm run webpack-minified",
@@ -39,5 +36,8 @@
     "type": "git",
     "url": "http://github.com/flightjs/flight.git"
   },
-  "homepage": "http://github.com/flightjs/flight"
+  "homepage": "http://github.com/flightjs/flight",
+  "dependencies": {
+    "prettier": "^2.0.5"
+  }
 }
